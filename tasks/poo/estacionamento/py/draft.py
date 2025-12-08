@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 class Veiculo(ABC):
-    def __init__(self, id: str, tipo: str, hora_entrada: int):
+    def __init__(self, id: str, tipo: str):
         self.id = id
         self.tipo = tipo
         self.hora_entrada = 0
@@ -23,7 +23,9 @@ class Veiculo(ABC):
         pass
 
     def __str__(self):
-        return f"______{self.tipo} : ___{self.id} : {self.horaEntrada}"
+        tipo_pad = "_" * (10 - len(self.tipo)) + self.tipo
+        id_pad = "_" * (10 - len(self.id)) + self.id
+        return f"{tipo_pad} : {id_pad} : {self.hora_entrada}"
 
 class Bike(Veiculo):
     def __init__(self, id):
@@ -63,7 +65,7 @@ class Estacionamento:
     def passarTempo(self, tempo):
         self.horaAtual += tempo
 
-    def estacionar(self, veiculo):
+    def estacionar(self, veiculo) -> str:
         veiculo.setEntrada(self.horaAtual)
         self.veiculos.append(veiculo)
 
@@ -97,6 +99,36 @@ class Estacionamento:
 
 def main():
     est = Estacionamento()
+    while True:
+        line = input()
+        print("$" + line)
+        args = line.split(" ")
+
+        if args[0] == "end":
+            break
+        elif args [0] == "show":
+            print(est)
+        elif args [0] == "tempo":
+            tempo = int(args[1])
+            est.passarTempo(tempo)
+        elif args[0] == "estacionar":
+            tipo = args[1]
+            id = args[2]
+
+            if tipo == "bike":
+                est.estacionar(Bike(id))
+            elif tipo == "moto":
+                est.estacionar(Moto(id))
+            elif tipo == "carro":
+                est.estacionar(Carro(id))
+        
+
+            
+
+
+            
+
+    
     
 
 main()

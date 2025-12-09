@@ -61,6 +61,10 @@ class Estacionamento:
             if v.getId() == id:
                 return i
         return -1
+        v = self.veiculos[idx]
+        valor = v.calcular_valor(self.horaAtual)
+
+        
 
     def passarTempo(self, tempo):
         self.horaAtual += tempo
@@ -73,9 +77,6 @@ class Estacionamento:
         idx = self.procurar_veiculo(id)
         if idx == -1:
             return
-
-        v = self.veiculos[idx]
-        valor = v.calcular_valor(self.horaAtual)
 
         print(
             f"{v.getTipo()} chegou {v.getEntrada()} saiu {self.horaAtual}."
@@ -121,14 +122,10 @@ def main():
                 est.estacionar(Moto(id))
             elif tipo == "carro":
                 est.estacionar(Carro(id))
+        elif args[0] == "pagar": 
+            est.pagar()
+
+                 
         
-
-            
-
-
-            
-
-    
-    
 
 main()

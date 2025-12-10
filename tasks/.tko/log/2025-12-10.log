@@ -1,0 +1,27 @@
+2025-12-10 00:09:50, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:136
+2025-12-10 00:10:08, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:136
+2025-12-10 00:10:50, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:136
+2025-12-10 00:10:51, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0
+2025-12-10 00:10:52, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0
+2025-12-10 00:10:52, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0
+2025-12-10 00:10:52, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0
+2025-12-10 00:10:52, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0
+2025-12-10 00:11:10, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0
+2025-12-10 00:11:11, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0
+2025-12-10 00:11:18, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:75, size:135
+2025-12-10 00:11:57, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:75, size:135
+2025-12-10 00:13:26, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:75
+2025-12-10 00:13:59, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:75, size:135
+2025-12-10 00:15:17, MOVE, v:1, k:poo@estacionamento, mode:PICK
+2025-12-10 00:15:18, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:75, size:132
+2025-12-10 00:15:19, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:75
+2025-12-10 00:16:32, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:75, size:134
+2025-12-10 00:17:00, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:75, size:134
+2025-12-10 00:19:13, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:75
+2025-12-10 00:20:01, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:100, size:134
+2025-12-10 00:24:02, MOVE, v:1, k:poo@estacionamento, mode:BACK
+2025-12-10 00:28:34, SELF, v:1, k:poo@estacionamento, rate:100, human:sim, guide:sim, alone:7
+2025-12-10 00:31:02, MOVE, v:1, k:poo@cofre, mode:DOWN
+2025-12-10 00:31:06, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-10 00:31:07, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:0
+2025-12-10 00:31:18, MOVE, v:1, k:poo@cofre, mode:BACK

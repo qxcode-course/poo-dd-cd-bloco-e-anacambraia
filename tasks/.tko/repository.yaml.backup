@@ -12,7 +12,7 @@ sources:
   type: clone
   branch: master
   cache_path: ''
-  cache_timestamp: '2025-12-09 18:34:47'
+  cache_timestamp: '2025-12-09 23:51:26'
   filters:
   - herança
 expanded:
@@ -22,7 +22,7 @@ expanded:
 tasks:
   poo@zoo: '{rate:100, human:sim, guide:sim, alone:10, study:120}'
   poo@pagamento: '{rate:100, human:sim, iagen:sim, alone:10, study:120}'
-  poo@estacionamento: '{rate:75}'
+  poo@estacionamento: '{rate:100, human:sim, guide:sim, alone:7}'
 flags:
   quests: 0
   tracks: 0
@@ -30,4 +30,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@estacionamento
+selected: poo@cofre

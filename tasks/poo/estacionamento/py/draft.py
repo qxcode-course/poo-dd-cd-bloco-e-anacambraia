@@ -77,9 +77,11 @@ class Estacionamento:
         idx = self.procurar_veiculo(id)
         if idx == -1:
             return
+        v = self.veiculos[idx]
+        valor = v.calcular_valor(self.horaAtual)
 
         print(
-            f"{v.getTipo()} chegou {v.getEntrada()} saiu {self.horaAtual}."
+            f"{v.getTipo()} chegou {v.getEntrada()} saiu {self.horaAtual}. "
             f"Pagar R$ {valor:.2f}"
         )
 
@@ -123,7 +125,8 @@ def main():
             elif tipo == "carro":
                 est.estacionar(Carro(id))
         elif args[0] == "pagar": 
-            est.pagar()
+            id = args[1]
+            est.pagar(id)
 
                  
         
